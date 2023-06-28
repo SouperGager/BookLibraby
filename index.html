@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="container">
+            <div class="item">
+                <h1 class="heading">Library</h1>
+            </div>
+            <div class="item">
+                <button class="btn" id="login">Log in</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <button class="btn" id="addbook">+ Add Books</button>
+    </div>
+
+    <div id="overlay">
+        <div id="popup">
+            <span class="close">&times;</span>
+            <form id="myForm">
+                <label for="title" id="addbookh">Add book</label>
+                <input type="text" id="title" name="title" required placeholder="Title">
+                <input type="text" id="author" name="author" required placeholder="Author">
+                <input type="number" id="pages" name="pages" required placeholder="Pages">
+                <label for="read" id="label"> Have you read it?</label><br>
+                <input type="checkbox" id="read" name="read" value="Read">
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <div id="gridContainer"></div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
